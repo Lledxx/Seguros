@@ -16,8 +16,14 @@ export default function Contact() {
 
   return (
     <section className="py-20 text-center">
-      <h2 className="text-4xl font-bold mb-8">Solicitar Cotización</h2>
-
+      <div className="text-center mb-10">
+  <h2 className="text-[#0a192f] text-3xl md:text-4xl font-extrabold mb-2">
+    Solicitá tu cotización
+  </h2>
+  <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full"></div>
+  <p className="text-gray-500 mt-4">Completá tus datos y te contactaremos a la brevedad.</p>
+     </div>
+      
       <form
         onSubmit={enviar}
         className="flex flex-col items-center gap-4"

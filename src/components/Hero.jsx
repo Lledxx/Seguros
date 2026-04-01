@@ -13,25 +13,24 @@ export default function Hero() {
         backgroundImage: "url('https://campus.seguros.school/pluginfile.php/911/course/overviewfiles/prl-sector-asegurador.jpg')" 
       }}
     >
-      {/* Overlay: Importante para el contraste del logo arriba */}
-      <div className="absolute inset-0 bg-black/50"></div>
+   {/* Contenedor del texto y botón */}
+<div className="relative z-10 bg-black/40 p-6 md:p-10 rounded-xl backdrop-blur-[2px] text-center flex flex-col items-center">
+  
+  <h1 className="text-white text-4xl md:text-6xl font-bold italic mb-4 drop-shadow-lg">
+    Seguros Generales <br/> 
+    <span className="text-blue-400">a tu Medida</span>
+  </h1>
+  
+  <p className="text-gray-200 text-lg md:text-xl max-w-2xl mb-8">
+    Asesoramiento profesional, rápido y confiable para proteger lo que más valorás.
+  </p>
+  
+  {/* Botón centrado gracias a 'items-center' en el div padre */}
+  <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:scale-105 transition-all text-lg w-fit">
+    Solicitar asesoramiento
+  </button>
 
-      <div className="relative z-10 text-white text-center max-w-4xl">
-        <h2 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-2xl">
-          Seguros Generales <br className="hidden md:block" /> a tu Medida
-        </h2>
-
-        <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 font-light">
-          Asesoramiento profesional, rápido y confiable para proteger lo que más valorás.
-        </p>
-
-        <button
-          onClick={contactar}
-          className="bg-green-500 px-12 py-5 rounded-2xl font-bold text-xl hover:scale-105 active:scale-95 transition-all shadow-2xl"
-        >
-          Solicitar asesoramiento
-        </button>
-      </div>
+</div>
     </section>
   );
 }
