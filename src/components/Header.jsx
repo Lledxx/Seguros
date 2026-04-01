@@ -1,4 +1,4 @@
-import logo from '../img/logo.png'; 
+
 
 export default function Header() {
   return (
@@ -8,15 +8,15 @@ export default function Header() {
       
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex-shrink-0">
-          <img 
-            src={logo} 
+         <img 
+           src="/img/logo.png"
             alt="Logo Alejandro Bessi" 
             /* CAMBIOS CLAVE:
                1. Aumentamos el alto a h-16 (móvil) y h-24 (PC) para que sea grande.
                2. Eliminamos clases que lo achicaban.
                3. Usamos shadow-black para darle profundidad.
             */
-            className="h-14 md:h-20 w-auto object-contain drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]" 
+            className="h-14 md:h-24 w-auto object-contain drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)]" 
             style={{ 
               imageRendering: 'auto',
               filter: 'contrast(1.1)' // Le da un poco más de fuerza al blanco

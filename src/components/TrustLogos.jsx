@@ -10,10 +10,10 @@ export default function TrustLogos() {
         </p>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
 
-          <img src="/src/img/expertaseguros.png" alt="Experta Seguros" className="h-12 w-auto" />
-          <img src="/src/img/fedpatlogo.png" alt="Federacion Patronal" className="h-12 w-auto" />
-          <img src="/src/img/mercantil.png" alt="Mercantil Andina" className="h-12 w-auto" />
-          <img src="/src/img/sancristobal.png" alt="San Cristobal" className="h-12 w-auto" />
+          <img src="/img/expertaseguros.png" alt="Experta Seguros" className="h-12 w-auto" />
+          <img src="/img/fedpatlogo.png" alt="Federacion Patronal" className="h-12 w-auto" />
+          <img src="/img/mercantil.png" alt="Mercantil Andina" className="h-12 w-auto" />
+          <img src="/img/sancristobal.png" alt="San Cristobal" className="h-12 w-auto" />
         </div>
       </div>
     </section>
