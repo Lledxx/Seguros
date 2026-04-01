@@ -47,7 +47,7 @@ export default function Contact() {
           required
         />
 
-        <button className="bg-green-500 px-6 py-3 rounded-lg text-white hover:bg-green-600">
+        <button className="bg-orange-500 px-6 py-3 rounded-lg text-white hover:bg-green-600">
           Enviar consulta
         </button>
       </form>
