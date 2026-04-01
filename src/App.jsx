@@ -7,13 +7,13 @@ import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans pb-32 md:pb-40"> {/* Este padding evita que el footer tape el final del sitio */}
       <Header />
       <Hero />
       <Services />
       <Contact />
       <WhatsAppButton />
-        <Footer />
+      <Footer />
     </div>
   );
 }

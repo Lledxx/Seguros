@@ -8,25 +8,26 @@ export default function Hero() {
 
   return (
     <section 
-      className="relative bg-cover bg-center bg-no-repeat py-32 px-5 flex items-center justify-center"
+      className="relative min-h-screen bg-cover bg-[50%_35%] bg-no-repeat flex items-center justify-center px-5"
       style={{ 
-        backgroundImage: "url('https://i.ibb.co/Y7RV93hV/Gemini-Generated-Image-4wrdik4wrdik4wrd.png')" 
+        backgroundImage: "url('https://campus.seguros.school/pluginfile.php/911/course/overviewfiles/prl-sector-asegurador.jpg')" 
       }}
     >
-      <div className="absolute inset-0 bg-blue-900/60 backdrop-blur-[1px]"></div>
+      {/* Overlay: Importante para el contraste del logo arriba */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 text-white text-center max-w-3xl">
-        <h2 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-          Seguros Generales a tu Medida
+      <div className="relative z-10 text-white text-center max-w-4xl">
+        <h2 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-2xl">
+          Seguros Generales <br className="hidden md:block" /> a tu Medida
         </h2>
 
-        <p className="text-xl mb-10 max-w-xl mx-auto drop-shadow-md">
+        <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 font-light">
           Asesoramiento profesional, rápido y confiable para proteger lo que más valorás.
         </p>
 
         <button
           onClick={contactar}
-          className="bg-green-500 px-10 py-4 rounded-xl font-bold text-lg hover:scale-105 hover:bg-green-600 transition-all shadow-xl"
+          className="bg-green-500 px-12 py-5 rounded-2xl font-bold text-xl hover:scale-105 active:scale-95 transition-all shadow-2xl"
         >
           Solicitar asesoramiento
         </button>
