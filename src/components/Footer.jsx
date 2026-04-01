@@ -44,7 +44,7 @@ const Footer = () => {
           {/* Redes */}
           <div className="space-y-3">
             <h3 className="text-white text-lg font-bold italic">Alejandro Bessi</h3>
-            <p className="text-xs opacity-70">Protección profesional personalizada.</p>
+            <p className=" text-white text-xs opacity-70">Protección profesional personalizada.</p>
             <div className="flex space-x-4 text-xl">
               <a href="#">💬</a><a href="#">📸</a><a href="#">💼</a>
             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
              <button className="w-full py-2 border border-red-500/60 text-red-400 hover:bg-red-500 hover:text-white transition-all text-[10px] font-bold rounded uppercase">
               Botón de Arrepentimiento
             </button>
-            <div className="opacity-50 text-[9px]">
+            <div className=" text-white opacity-50 text-[14px]">
                <p>SSN: 0800-666-8400 | www.ssn.gob.ar</p>
             </div>
           </div>
