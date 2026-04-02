@@ -5,19 +5,20 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Definimos las clases según el estado para que sea más limpio
+  const headerClasses = scrolled 
+    ? "bg-black shadow-lg md:bg-black/70 md:backdrop-blur-md" 
+    : "bg-transparent backdrop-blur-none";
+
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? "bg-black/90 md:bg-black/70 md:backdrop-blur-md shadow-lg" 
-        : "bg-transparent"
-    }`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${headerClasses}`}>
       
       <div className="container mx-auto flex items-center justify-between p-3 md:p-6">
         
@@ -27,8 +28,8 @@ export default function Header() {
             alt="Logo Alejandro Bessi" 
             className={`w-auto object-contain transition-all duration-300 ${
               scrolled 
-                ? "h-12 md:h-16" 
-                : "h-14 md:h-18"
+                ? "h-10 md:h-14" 
+                : "h-12 md:h-18"
             }`}
           />
         </a>
