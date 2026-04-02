@@ -55,6 +55,7 @@ export default function Services() {
           ))}
         </div>
       </div>
+      <div className="h-12 md:h-16" />
     </section>
   );
 }
