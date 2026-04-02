@@ -1,25 +1,38 @@
+import { useEffect, useState } from "react";
+
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 flex items-center p-4 md:p-6">
-      {/* Overlay con Blur */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent backdrop-blur-md z-[-1]"></div>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+      scrolled 
+        ? "bg-black/70 backdrop-blur-md shadow-lg" 
+        : "bg-transparent"
       
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex-shrink-0">
-          <a href="/" className="block"> 
-            <img 
-              src="/img/logo.png"
-              alt="Logo Alejandro Bessi" 
-              className="h-14 md:h-24 w-auto object-contain drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] transition-all duration-300" 
-              style={{ 
-                imageRendering: '-webkit-optimize-contrast',
-                filter: 'contrast(1.1)' 
-              }} 
-            />
-          </a>
-        </div>
         
-        {/* Aquí iría tu menú de navegación si lo agregas luego */}
+    }`}>
+      
+      <div className="container mx-auto flex items-center justify-between p-4 md:p-6">
+        
+        <a href="/" className="block"> 
+        <img 
+  src="/img/logo.png"
+  alt="Logo Alejandro Bessi" 
+  className={`w-auto object-contain transition-all duration-300 ${
+    scrolled ? "h-14 md:h-20" : "h-12 md:h-16"
+  }`}
+/>
+        </a>
+
       </div>
     </header>
   );
