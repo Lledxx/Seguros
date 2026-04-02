@@ -25,11 +25,10 @@ export default function Header() {
           <img 
             src="/img/logo.png"
             alt="Logo Alejandro Bessi" 
-            /* Fix: El logo ahora se achica al scrollear para no tapar el contenido */
             className={`w-auto object-contain transition-all duration-300 ${
               scrolled 
-                ? "h-10 md:h-14" 
-                : "h-12 md:h-18"
+                ? "h-12 md:h-16" 
+                : "h-14 md:h-18"
             }`}
           />
         </a>
