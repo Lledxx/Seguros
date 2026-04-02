@@ -13,7 +13,6 @@ const Footer = () => {
       onClick={() => setIsOpen(!isOpen)}
     >
       
-      {/* BARRA SIEMPRE VISIBLE */}
       <div className="h-[48px] max-w-7xl mx-auto px-6 flex justify-between items-center cursor-pointer">
         <div className="flex items-center gap-2">
           <h3 className="text-white text-lg font-bold italic">Alejandro Bessi</h3>
@@ -32,14 +31,11 @@ const Footer = () => {
         <p className="hidden md:block opacity-40 text-[10px] text-gray-400">© {new Date().getFullYear()}</p>
       </div>
 
-      {/* CONTENIDO DESPLEGABLE CON LÍMITE DE ALTURA */}
-      {/* max-h-[60vh] limita el tamaño en el celu al 60% de la pantalla */}
       <div className={`max-w-7xl mx-auto px-6 pt-6 pb-10 border-t border-gray-800 transition-opacity duration-300 overflow-y-auto max-h-[60vh] md:max-h-none ${
         isOpen ? 'opacity-100' : 'opacity-0'
       }`}>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
-          {/* Columna 1: Branding y Redes */}
           <div className="space-y-4">
             <div className="flex items-baseline gap-2">
               <h3 className="text-white text-xl font-bold italic">Alejandro Bessi</h3>
@@ -55,7 +51,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Columna 2: Seguros */}
           <div>
             <h4 className="text-white font-semibold mb-4 border-b border-blue-500 pb-2 w-fit text-sm">Nuestros Seguros</h4>
             <ul className="space-y-2 text-sm text-gray-400">
@@ -66,7 +61,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Columna 3: Contacto */}
           <div>
             <h4 className="text-white font-semibold mb-4 border-b border-blue-500 pb-2 w-fit text-sm">Contacto</h4>
             <ul className="space-y-3 text-sm text-gray-400">
@@ -76,7 +70,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Columna 4: Legal / SSN */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold mb-4 border-b border-blue-500 pb-2 w-fit text-sm">Legal</h4>
             <button className="w-full py-2 px-4 border border-red-500 text-red-500 text-[10px] font-bold rounded uppercase tracking-wider bg-red-500/5">
@@ -89,7 +82,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Defensa del Consumidor */}
         <div className="mt-8 pt-6 border-t border-gray-800 text-center text-[10px] text-gray-600">
           <p>© {new Date().getFullYear()} Alejandro Bessi Seguros.</p>
           <p className="mt-1 underline">Defensa del Consumidor: Para reclamos ingrese aquí.</p>

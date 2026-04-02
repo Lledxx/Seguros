@@ -10,7 +10,6 @@ export default function Header() {
             <img 
               src="/img/logo.png"
               alt="Logo Alejandro Bessi" 
-              // Usamos max-h para que nunca exceda el contenedor y w-auto para mantener proporción
               className="h-14 md:h-24 w-auto object-contain drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] transition-all duration-300" 
               style={{ 
                 imageRendering: '-webkit-optimize-contrast',
